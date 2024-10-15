@@ -1,0 +1,106 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    background: linear-gradient(#001f9d, #3e5ae2, #00ffff) fixed;
+    font-size: 18px;
+}
+
+a {
+    color: #f00;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #f90;
+    text-decoration: underline;
+}
+
+h1,h2{
+margin: 0;
+}
+
+header {
+    background: url(../img/sky.jpg) no-repeat;
+    background-size: cover; /* contain */
+    background-position: 50%;
+    height: 200px;
+    color: #fff;
+    text-align: center;
+    padding-top: 20px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    background-color: #333c;
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+section {
+    padding: 10px;
+    color: #fff;
+}
+
+section img{
+    width: 100%;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: #011430cc;
+}
+nav div {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+nav a {
+    display: inline-block;
+    min-width: 100px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0 10px 0 0;
+    border: solid #ff4400 2px;
+    line-height: 40px;
+    background-color: #08133d;
+}
+
+nav a:hover {
+    text-decoration: none;
+    border: solid #ffff00 2px;
+    background-color: rgb(42, 77, 113);
+}
+
+footer {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+@media (max-width: 768px) {
+    main {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 520px) {
+    section {
+        grid-column: 1/-1;
+    }
+}
